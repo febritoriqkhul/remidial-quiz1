@@ -10,6 +10,25 @@
  */
 public class MainComputer {
     public static void main(String[] args) {
+        Cpu cpu = new Cpu();
+        cpu.setNamaCPU("Digital Alliance");
+        cpu.setHargaCPU(6000000);
         
+        Mouse mouse = new Mouse();
+        mouse.setNamaMouse("Logitech");
+        mouse.setHargaMouse(300000);
+        
+        Keyboard keyboard = new Keyboard();
+        keyboard.setNamaKeyboard("Rexus K9D");
+        keyboard.setHargaKeyboard(200000);
+        
+        Monitor monitor = new Monitor();
+        monitor.setNamaMonitor("LED ASUS VS228DE");
+        monitor.setHargaMonitor(1850000);
+        
+        monitor.setCpu(cpu);
+        monitor.setMouse(mouse);
+        monitor.setKeyboard(keyboard);
+        System.out.println(monitor.info());
     }
 }
