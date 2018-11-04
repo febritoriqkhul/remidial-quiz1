@@ -9,5 +9,32 @@
  * @author Febri TK
  */
 public class Mouse {
+    private String namaMouse;
+    private int hargaMouse;
+
+    public Mouse() {
+    }
+
+    public String getNamaMouse() {
+        return namaMouse;
+    }
+
+    public void setNamaMouse(String namaMouse) {
+        this.namaMouse = namaMouse;
+    }
+
+    public int getHargaMouse() {
+        return hargaMouse;
+    }
+
+    public void setHargaMouse(int hargaMouse) {
+        this.hargaMouse = hargaMouse;
+    }
     
+    public String info(){
+        String info="";
+        info += "Nama Mouse: "+this.namaMouse+"\n";
+        info += "Harga Mouse: "+this.hargaMouse+"\n";
+        return info;
+    }
 }
